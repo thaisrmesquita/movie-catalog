@@ -9,6 +9,16 @@ class MovieController {
     return res.json(user);
   }
 
+ async showId(req, res) {
+    const { id } = req.params;
+    const movie = await Movie.findOne({ _id:id });
+
+    if (!movie) {
+      return res.status(404).json({ error: 'Filme não encontrado' });
+    }
+    return res.status(200).json(movie);
+  }
+
   async show(req, res) {
     const { title } = req.params;
     const movie = await Movie.findOne({ title });

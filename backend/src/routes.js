@@ -14,6 +14,7 @@ routes.post('/users', UserController.store);
 routes.get('/users', UserController.index);
 routes.get('/users/:email', UserController.show);
 routes.get('/movies', MovieController.index);
+routes.get('/movies/:id', MovieController.showId);
 routes.get('/movies/:title', MovieController.show);
 routes.post('/movies', upload.single('folder'), MovieController.store);
 routes.get('/movies', MovieController.index);
