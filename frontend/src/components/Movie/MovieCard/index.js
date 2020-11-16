@@ -18,7 +18,7 @@ const MovieCard = () => {
                     <article key={movie.id} className="movie">
                         <strong>{movie.title}</strong>
                         <img src={movie.folder_url} />
-                        <Link to='/'>Acessar</Link>
+                        <Link to={`/movies/${movie.id}`}>Acessar</Link>
                     </article>
                 )})}
             </div>
