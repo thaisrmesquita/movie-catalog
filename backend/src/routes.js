@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import multer from 'multer';
 import uploadConfig from './config/upload';
+import DashboardController from './controllers/DashboardController';
 import MovieController from './controllers/MovieController';
 import SessionController from './controllers/SessionController';
 import UserController from './controllers/UserController';
@@ -18,5 +19,7 @@ routes.post('/movies', upload.single('folder'), MovieController.store);
 routes.get('/movies', MovieController.index);
 routes.put('/movies/:movie_id', upload.single('folder'), MovieController.update);
 routes.delete('/movies', MovieController.destroy);
+
+routes.get('/dashboard', DashboardController.show);
 
 export default routes;
