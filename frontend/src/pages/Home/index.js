@@ -1,12 +1,14 @@
 import React from 'react';
 import Header from '../../components/Header';
+import MovieCard from '../../components/Movie/MovieCard';
+import './home.css';
 
 const Home = () => {
 
   return (
-    <div>
+    <div className="container-home">
       <Header />
-        <h1>Home</h1>
+      <MovieCard />
     </div>
   )
 }
