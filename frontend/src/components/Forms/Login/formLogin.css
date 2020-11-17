@@ -1,0 +1,16 @@
+
+.container-form-login {
+    width: 40%;
+}
+
+.container-form-login .form {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 1em #ddd;
+}
+
+.container-form-login .form .btn-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
