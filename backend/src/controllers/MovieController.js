@@ -97,7 +97,7 @@ class MovieController {
   }
 
   async destroy(req, res) {
-    const { movie_id } = req.body;
+    const { movie_id } = req.params;
     const { user_id } = req.headers;
 
     const user = await User.findById(user_id);
