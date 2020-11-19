@@ -1,0 +1,37 @@
+.container-info-delete {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.container-info-delete .info-delete-title {
+    font-size: 14px;
+    text-align: center;
+}
+.container-info-delete .container-btn-delete {
+    text-align: center;
+    margin-top: 20px;
+}
+.container-info-delete .container-btn-delete .btn-delete {
+    margin: 10px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.container-info-delete .container-btn-delete .btn-delete:nth-child(1) {
+    background-color: #16a085;
+}
+.container-info-delete .container-btn-delete .btn-delete:nth-child(2) {
+    background-color: #c0392b;
+}
+
+@media(min-width: 750px){
+    .container-info-delete .info-delete-title {
+        font-size: 20px;
+    }    
+    .container-info-delete .container-btn-delete .btn-delete {
+        font-size: 20px;
+    } 
+}
