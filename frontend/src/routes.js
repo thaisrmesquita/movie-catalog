@@ -7,6 +7,7 @@ import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import MovieDelete from './pages/Movie/MovieDelete';
+import MovieRegister from './pages/Movie/MovieRegister';
 
 export default function Routes() {
     return (
@@ -16,6 +17,7 @@ export default function Routes() {
                 <Route path="/login" component={ Login } />
                 <Route path="/movies/:id" exact component={ Movie }/>
                 <Route path="/movies/delete/:id" exact component={ MovieDelete }/>
+                <Route path="/dashboard/movies" exact component={ MovieRegister }/>
                 <Route path="/dashboard" exact component={ Dashboard }/>
                 <Route path="/register" exact component={ Register }/>
             </Switch>
