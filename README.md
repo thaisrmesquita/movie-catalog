@@ -1,6 +1,6 @@
 ## Descrição do Projeto :star:
 
-Este projeto tem como finalidade a criação de um catalogo de filmes,onde o usuário não logado poderá ver uma lista de filmes já cadastrados e também tem sua própria acessa de acesso, onde poderá criar, editar, listar, remover e ver detalhes para cada filme por ele adicionado em sua lista pessoal.
+Este projeto tem como finalidade a criação de um catalogo de filmes, onde o usuário não logado poderá ver uma lista de filmes já cadastrados e também tem sua própria área de acesso, onde poderá criar, editar, listar, remover e ver detalhes para cada filme por ele adicionado em sua lista pessoal.
 
 ## Pré-requisitos
 
@@ -46,7 +46,13 @@ yarn dev
 
 Pronto, a aplicação estará disponivel a partir da rota http://localhost:3000/
 
-#### Tecnologias utilizadas:
+## Para Teste
+
+Login: moviecatalog@freegmail.ga
+
+Senha: 123456
+
+## Tecnologias utilizadas:
 
 #### Back-end:
 
@@ -63,3 +69,9 @@ A parte mais desafiadora deste projeto até o presente momento será o preenchim
 #### O que faria diferente se tivesse mais tempo:
 
 Validações de campos tanto no front-end quanto no back-end.
+
+
+
+
+É isso :))
+
