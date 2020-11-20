@@ -19,7 +19,7 @@ routes.get('/movies/:title', MovieController.show);
 routes.post('/movies', upload.single('folder'), MovieController.store);
 routes.get('/movies', MovieController.index);
 routes.put('/movies/:movie_id', upload.single('folder'), MovieController.update);
-routes.delete('/movies', MovieController.destroy);
+routes.delete('/movies/:movie_id', MovieController.destroy);
 
 routes.get('/dashboard', DashboardController.show);
 
