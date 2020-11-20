@@ -1,8 +1,3 @@
-.title-personal-catalog {
-font-size: 20px;
-text-align: center;
-}
-
 .container-card {
     display: flex; 
     flex-direction: column;
@@ -12,6 +7,7 @@ text-align: center;
     width: 90%;
     margin: 0 auto;
     margin-bottom: 20px;
+    box-shadow: 0 0 1em #ddd;
 }
 
 .container-card .card .image-card {
@@ -27,6 +23,7 @@ text-align: center;
     text-align: center;
 }
 .container-buttons {
+    margin: 0 auto;
     margin-bottom: 30px;
 }
 .container-buttons .button {
@@ -34,6 +31,7 @@ text-align: center;
     padding: 10px;
     color: #fff;
     border-radius: 5px;
+    font-size: 14px;
 }
 .container-buttons .button:nth-child(1) {
     background-color: #2980b9;
@@ -47,10 +45,31 @@ text-align: center;
 
 @media(min-width: 750px) {
     .container-card {
-        flex-direction: row; 
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%; 
     }
     .container-card .card {
-        width: 300px;
         margin: 30px;
     }
+    .container-buttons {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .container-buttons .button {
+        margin: 10px;
+        padding: 10px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    .container-buttons .button:nth-child(1) {
+        background-color: #2980b9;
+    }
+    .container-buttons .button:nth-child(2) {
+        background-color: #27ae60;
+    }
+    .container-buttons .button:nth-child(3) {
+        background-color: #c0392b;
+    }
+    
 }

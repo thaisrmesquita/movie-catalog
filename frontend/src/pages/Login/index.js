@@ -4,6 +4,7 @@ import FormLogin from '../../components/Forms/Login';
 import './login.css';
 
 const Login = () => {
+    console.log(window.location.href);
    return (
        <>
         <Header />

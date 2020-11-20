@@ -3,9 +3,39 @@
     margin: 0 auto;
 }
 .dashboard .text-main-dashboard {
-    font-size: 16px;
-    text-align: right;
+    font-size: 14px;
+    text-align: center;
     margin-top: 30px;
-    margin-right: 30px;
+    margin-right: 0;
     margin-bottom: 30px;
+
+}
+.container-btn-new-movie {
+    margin: 0 auto;
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.container-btn-new-movie .btn-new-movie {
+    background-color: #2980b9;
+    color:#fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media(min-width:750px) {
+    .container-btn-new-movie {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin-top: 30px;
+    }
+    
+    .dashboard .text-main-dashboard {
+        font-size: 16px;
+        text-align: left;
+        margin-right: 30px;
+    }
 }

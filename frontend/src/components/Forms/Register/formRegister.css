@@ -1,6 +1,12 @@
+.container-wrapper {
+    margin: 0 auto;
+    width: 90%;
+
+}
 
 .container-form-register {
-    width: 40%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .container-form-register .form {
@@ -10,7 +16,24 @@
 }
 
 .container-form-register .form .btn-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+}
+.container-form-register .form .btn-form .link-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+@media(min-width: 750px) {    
+    .container-form-register {
+        width: 40%;
+    }
+        
+    .container-form-register .form .btn-form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container-form-register .form .btn-form .link-login {
+        margin-top: 0;
+    }
 }

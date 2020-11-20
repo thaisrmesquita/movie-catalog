@@ -26,7 +26,6 @@ const PersonalCatalogMovie = () => {
 
     return (
         <div className="container-personal-catalog">
-            <h1 className="title-personal-catalog">Catalogo Pessoal</h1>
             <div className="container-card">
                 {movies.map(movie => (
                     <div className="card" key={movie._id}>
@@ -35,7 +34,7 @@ const PersonalCatalogMovie = () => {
                         <span className="resume-card">{movie.summarized_plot}</span>
                         <div className="container-buttons">
                             <Link to={`/movies/${movie.id}`} className="button">Acessar</Link>
-                            <Link href="" className="button">Atualizar</Link>
+                            <Link to={`/movies/update/${movie.id}`} className="button">Atualizar</Link>
                             <Link to={`/movies/delete/${movie.id}`} onClick={ handleDelete(`${movie.id}`) } className="button">Deletar</Link>
                         </div>
                     </div>

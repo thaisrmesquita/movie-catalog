@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 import MovieDelete from './pages/Movie/MovieDelete';
 import MovieRegister from './pages/Movie/MovieRegister';
+import MovieUpdate from './pages/Movie/MovieUpdate';
 
 export default function Routes() {
     return (
@@ -17,6 +18,7 @@ export default function Routes() {
                 <Route path="/login" component={ Login } />
                 <Route path="/movies/:id" exact component={ Movie }/>
                 <Route path="/movies/delete/:id" exact component={ MovieDelete }/>
+                <Route path="/movies/update/:id" exact component={ MovieUpdate }/>
                 <Route path="/dashboard/movies" exact component={ MovieRegister }/>
                 <Route path="/dashboard" exact component={ Dashboard }/>
                 <Route path="/register" exact component={ Register }/>

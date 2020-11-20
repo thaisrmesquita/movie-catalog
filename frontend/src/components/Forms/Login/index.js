@@ -26,7 +26,7 @@ const FormLogin = () => {
     }
 
     return(
-        <div className="container">
+        <div className="container-form">
             <div className="container-form-login">
                 <Form className="form">
                     <FormGroup>

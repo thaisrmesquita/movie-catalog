@@ -28,7 +28,7 @@ const FormRegister = () => {
     }
 
     return(
-        <div className="container">
+        <div className="container-wrapper">
             <div className="container-form-register">
                 <Form className="form">
                 <FormGroup>
@@ -51,7 +51,7 @@ const FormRegister = () => {
                     </FormGroup>
                     <FormGroup className="btn-form">
                         <Button onClick={ handleRegister }>Cadastrar</Button>
-                        <Link to="/register" className="link-register">Não tem conta? Registre-se</Link>
+                        <Link to="/login" className="link-login">Já tem conta? Faça o Login</Link>
                     </FormGroup>
                    
                 </Form>

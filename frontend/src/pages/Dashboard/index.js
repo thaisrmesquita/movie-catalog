@@ -9,8 +9,11 @@ const Dashboard = () => {
     return (
         <div className="dashboard">
             <Header />
-            <h1 className="text-main-dashboard">Seja bem-vindo, { name }</h1>
-            <Link to='/dashboard/movies'>Adicionar Filme</Link>
+            
+            <div className="container-btn-new-movie">
+            <h1 className="text-main-dashboard">Seja bem-vindo ao seu catálogo, { name }</h1>
+                <Link className="btn-new-movie" to='/dashboard/movies'>Adicionar Filme</Link>
+            </div>
             <div className="dashboard-container">
                 <PersonalCatalogMovie />
             </div>
