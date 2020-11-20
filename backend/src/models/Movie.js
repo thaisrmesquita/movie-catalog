@@ -4,7 +4,7 @@ const MovieSchema = new Schema(
   {
     title: String,
     genre: String,
-    release_date: Date,
+    release_date: { type: Date, default: Date.now },
     main_actors: String,
     summarized_plot: String,
     youtube_trailer: String,
