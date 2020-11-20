@@ -3,6 +3,8 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import path from 'path';
 import routes from './routes';
+import { seedUsers,seedMovies } from '../seed.js';
+
 
 class App {
     constructor () {
@@ -14,6 +16,8 @@ class App {
               useUnifiedTopology: true,
             }
         );
+        seedUsers();
+        seedMovies();
         this.middlewares();
         this.routes();
     }
